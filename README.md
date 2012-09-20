@@ -37,7 +37,7 @@ At this moment, just a few metrics are implemented:
 * Traffic per domain for the current month
 * Number of domains
 * Number of clients
-* Number of e-mail accounts
+* Number of mailboxes
 
 Of course, you can add your own metrics. It's very simple! Just create a new script with the Skeleton and implement whichever metric you want.
 

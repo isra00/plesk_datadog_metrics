@@ -3,6 +3,8 @@
 /**
  * Get traffic stats per domain for the current month
  *
+ * Recommended frequency: daily
+ *
  * @author Israel Viana isra00@gmail.com
  * @license http://www.gnu.org/copyleft/gpl.html
  */

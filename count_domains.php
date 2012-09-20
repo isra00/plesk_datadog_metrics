@@ -3,6 +3,8 @@
 /**
  * Number of domains
  *
+ * Recommended frequency: daily
+ *
  * @author Israel Viana isra00@gmail.com
  * @license http://www.gnu.org/copyleft/gpl.html
  */

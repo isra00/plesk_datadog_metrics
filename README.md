@@ -21,7 +21,7 @@ If you don't know your API API Key or App Key, check your [Datadog settings](htt
 Run them with cron jobs
 -----------------------
 
-plesk_datadog_metrics is a set of useful PHP scripts that can send some metrics from your Plesk server (whether it's localhost or a remote server) to your Datadog dashboards. They are intended to be launched by cron jobs like this:
+`plesk_datadog_metrics` is a set of useful PHP scripts that can send some metrics from your Plesk server (whether it's localhost or a remote server) to your Datadog dashboards. They are intended to be launched by cron jobs like this:
 
     * 0 * * * php /path/to/your/scripts/cron_plesk_traffic_domain.php
 

@@ -1,6 +1,8 @@
 Cool Plesk metrics in your Datadog dashboards
 =============================================
 
+**plesk_datadog_metrics** is a set of useful PHP scripts that can send some metrics from your Plesk server (whether it's localhost or a remote server) to your Datadog dashboards.
+
 Setting up
 ----------
 
@@ -21,11 +23,11 @@ If you don't know your API API Key or App Key, check your [Datadog settings](htt
 Run them with cron jobs
 -----------------------
 
-`plesk_datadog_metrics` is a set of useful PHP scripts that can send some metrics from your Plesk server (whether it's localhost or a remote server) to your Datadog dashboards. They are intended to be launched by cron jobs like this:
+The scripts are intended to be launched by cron jobs like this:
 
-    * 0 * * * php /path/to/your/scripts/cron_plesk_traffic_domain.php
+    * 0 * * * php /path/to/your/scripts/traffic_domain_month.php
 
-This example cron job would send data about traffic per domain to Datadog each day at 0:00AM.
+With this example, the cron job would send data about traffic per domain to Datadog each day at 0:00AM.
 
 Remember: it's up to you when and which scripts are executed, and by which system user. However, each script includes a recommended frequency of execution in the first comment of the source code.
 

@@ -1,6 +1,11 @@
 <?php
 
-// Common boostrap routines from cron jobs
+/**
+ * Common boostrap routines from cron jobs
+ *
+ * @author Israel Viana isra00@gmail.com
+ * @license http://www.gnu.org/copyleft/gpl.html
+ */
 
 include_once 'vendor/datadogstatsd.php';
 

@@ -41,7 +41,7 @@ At this moment, just a few metrics are implemented:
 * Number of clients
 * Number of mailboxes
 
-Of course, you can add your own metrics. It's very simple! Just create a new script with the Skeleton and implement whichever metric you want.
+Of course, you can add your own metrics. It's very simple! Just create a new script with the [Skeleton](https://github.com/DataDog/php-datadogstatsd/blob/master/skeleton.php) and implement whichever metric you want.
 
 Feel free to contact me at isra00 AT gmail DOT com if you want to have new metrics. I will try to implement them.
 

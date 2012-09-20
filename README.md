@@ -1,8 +1,8 @@
-Plesk metrics to your Datadog dashboards
-========================================
+Cool Plesk metrics in your Datadog dashboards
+=============================================
 
-Install
--------
+Setting up
+----------
 
 The first thing to do is edit the init.php file and change the values of the following constants:
 
@@ -15,15 +15,33 @@ The first thing to do is edit the init.php file and change the values of the fol
     define('MYSQL_DB', 'psa');
 
 You can get your MySQL password in the file /etc/psa/.psa.shadow
+
 If you don't know your API API Key or App Key, check your [Datadog settings](https://app.datadoghq.com/account/settings#api).
+
+Run them with cron jobs
+-----------------------
 
 plesk_datadog_metrics is a set of useful PHP scripts that can send some metrics from your Plesk server (whether it's localhost or a remote server) to your Datadog dashboards. They are intended to be launched by cron jobs like this:
 
     * 0 * * * php /path/to/your/scripts/cron_plesk_traffic_domain.php
 
-This example cron job would send traffic per domain data to Datadog each day at 0:00AM.
+This example cron job would send data about traffic per domain to Datadog each day at 0:00AM.
 
-At this moment, just a few metrics are implemented. Feel free to contact me at isra00 AT gmail DOT com if you want to have new metrics... or you can fork the repo and write your own scripts!
+Remember: it's up to you when and which scripts are executed, and by which system user. However, each script includes a recommended frequency of execution in the first comment of the source code.
+
+Metrics
+-------
+
+At this moment, just a few metrics are implemented:
+
+* Traffic per domain for the current month
+* Number of domains
+* Number of clients
+* Number of e-mail accounts
+
+Of course, you can add your own metrics. It's very simple! Just create a new script with the Skeleton and implement whichever metric you want.
+
+Feel free to contact me at isra00 AT gmail DOT com if you want to have new metrics. I will try to implement them.
 
 God bless you.
 

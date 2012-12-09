@@ -36,11 +36,12 @@ Metrics
 
 At this moment, just a few metrics are implemented:
 
-* Traffic per domain for the current month (traffic_domain_month.php)
-* Number of domains (count_domains.php)
-* Number of clients (count_clients.php)
-* Number of mailboxes (count_mailboxes.php)
-* Total HD space used (disk_used.php)
+* Traffic per domain for the current month: traffic_domain_month.php
+* Number of domains: count_domains.php
+* Number of clients: count_clients.php
+* Number of mailboxes: count_mailboxes.php
+* Total HD space used: disk_used.php
+* Monthly visits per domain (requires AWStats): monthly_visits.php
 
 Of course, you can add your own metrics. It's very simple! Just create a new script with the [Skeleton](https://github.com/isra00/plesk_datadog_metrics/blob/master/skeleton.php) and implement whichever metric you want.
 
